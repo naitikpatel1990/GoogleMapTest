@@ -1,0 +1,33 @@
+{
+  "name": "com.test.googlemap",
+  "displayName": "TestGoogleMap",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^6.3.0",
+    "cordova-plugin-googlemaps": "^2.2.9",
+    "cordova-plugin-whitelist": "^1.3.3"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_ANDROID": "AIzaSyA-P6eq8BqS81lxYmhb79usaf3AYgpsthI",
+        "API_KEY_FOR_IOS": "AIzaSyAlKIC4sYQQBs8Ne1uESvLyvxyra85OHKk",
+        "LOCATION_WHEN_IN_USE_DESCRIPTION": "My custom when in use message",
+        "LOCATION_ALWAYS_USAGE_DESCRIPTION": "My custom always usage message",
+        "PLAY_SERVICES_VERSION": "12.0.0",
+        "ANDROID_SUPPORT_V4_VERSION": "24.1.0"
+      }
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

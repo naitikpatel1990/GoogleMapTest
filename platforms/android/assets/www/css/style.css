@@ -1,0 +1,53 @@
+.pop-over .hide-slide {
+    top: 0px;
+    background: #fff;
+    left: 0;
+}
+
+.pop-over.offscreen .hide-slide {
+    display: none;
+}
+
+#loc-setting.pop-over.offscreen {
+    left: -100% !important;
+    right: 100% !important;
+    visibility: hidden;
+    z-index: -1 !important;
+}
+#loc-setting.pop-over {
+    z-index: 1020 !important;
+    overflow: visible;
+
+}
+#loc-setting.pop-over .hide-slide {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    /*background: url("../img/arrow-left-black.svg") no-repeat center center;*/
+    background-size: 40%;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.pop-over {
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background: #fff;
+
+    visibility: visible;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+}
+
+.pop-over.topMenuVisible {
+
+    top: 45px;
+
+
+}
